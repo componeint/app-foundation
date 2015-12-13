@@ -11,7 +11,6 @@
             'ngMaterial',
             'ngMessages',
             'ngResource',
-            'ngMessages',
 
             /* 3rd-party */
             'ui.router',
