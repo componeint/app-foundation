@@ -18,7 +18,7 @@
   "require"          : {
     "php"                 : ">=5.4.0",
     "illuminate/support"  : "5.1.*@dev",
-    "illuminate/contracts": "5.1.*@dev",
+    "illuminate/contracts": "5.1.*@dev"
   },
   "require-dev"      : {
     "fzaninotto/faker": "~1.4",
@@ -28,8 +28,9 @@
   },
   "autoload"         : {
     "classmap": [
-      "src/seeds",
-      "src/controllers"
+      "databases/seeds",
+      "src/controllers",
+      "tests"
     ],
     "psr-4"   : {
       "Consigliere\\AppFoundation\\": "src"
