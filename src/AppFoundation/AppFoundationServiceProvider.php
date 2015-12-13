@@ -1,5 +1,7 @@
-<?php namespace AppFoundation;
+<?php namespace Consigliere\AppFoundation;
 
+use ReflectionClass;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class AppFoundationServiceProvider extends ServiceProvider
@@ -19,6 +21,13 @@ class AppFoundationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Find path to the package
+        $componenentsFileName = with(new ReflectionClass('\Consigliere\AppFoundation\AppFoundationServiceProvider'))->getFileName();
+        $componenentsPath = dirname($componenentsFileName);
+
+        $this->loadViewsFrom($componenentsPath . '/../views', 'appFoundation');
+
+        //include $componenentsPath . '/../routes.php';
 
     }
 
