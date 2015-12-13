@@ -6,7 +6,7 @@
     'use strict';
 
     angular
-        .module('appFoundation', [
+        .module('app.foundation', [
             /* Angularjs */
             'ngMaterial',
             'ngMessages',
