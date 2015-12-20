@@ -21,6 +21,7 @@
             'ngMdIcons',
             'toastr',
             'vAccordion',
+            'fxList',
 
             /* Intra-services */
             'inServices.exception',
