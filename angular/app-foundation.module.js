@@ -21,7 +21,6 @@
             'ngMdIcons',
             'toastr',
             'vAccordion',
-            'md.data.table',
 
             /* Intra-services */
             'inServices.exception',
