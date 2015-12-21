@@ -20,7 +20,6 @@
             'angular-loading-bar',
             'ngMdIcons',
             'toastr',
-            'vAccordion',
             'fxList',
 
             /* Intra-services */
