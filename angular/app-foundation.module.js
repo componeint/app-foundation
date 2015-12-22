@@ -10,7 +10,8 @@
             /* Angularjs */
             'ngMaterial',
             'ngMessages',
-            'ngResource',
+            'ngResource',,
+            'ngSanitize',
 
             /* 3rd-party */
             'ui.router',
