@@ -1,15 +1,18 @@
 [ui-view].ng-enter,
 [ui-view].ng-leave {
-  -webkit-transition: opacity ease-in-out 300ms;
-  transition: opacity ease-in-out 300ms;
+  -webkit-transition : opacity ease-in-out 300ms;
+  transition         : opacity ease-in-out 300ms;
 }
+
 [ui-view].ng-enter,
 [ui-view].ng-leave.ng-leave-active {
-  opacity: 0;
+  opacity : 0;
 }
+
 [ui-view].ng-enter.ng-enter-active {
-  opacity: 1;
+  opacity : 1;
 }
+
 [ui-view].ng-leave.ng-leave-active {
-  display: none;
+  display : none;
 }
