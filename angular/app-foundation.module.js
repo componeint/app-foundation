@@ -21,6 +21,7 @@
             'ngMdIcons',
             'toastr',
             'fxList',
+            'partialsModule',
 
             /* Intra-services */
             'inServices.exception',
