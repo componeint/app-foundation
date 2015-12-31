@@ -19,7 +19,6 @@
             'ngStorage',
             'angular-loading-bar',
             'ngMdIcons',
-            'toastr',
             'fxList',
             'partialsModule',
 
