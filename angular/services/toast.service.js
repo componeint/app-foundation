@@ -1,5 +1,6 @@
 /**
- * Created by anonymous on 30/12/15 18:11.
+ * Upgraded from https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/toast.service.js
+ * by anonymous on 30/12/15 18:11.
  */
 
 (function() {
@@ -7,12 +8,12 @@
 
     angular
         .module('appFoundation')
-        .factory('toastService', toastService);
+        .factory('ToastService', ToastService);
 
-    toastService.$inject = ['$mdToast'];
+    ToastService.$inject = ['$mdToast'];
 
     /* @ngInject */
-    function toastService($mdToast) {
+    function ToastService($mdToast) {
         var delay    = 6000,
             position = 'bottom right',
             action   = 'OK';
