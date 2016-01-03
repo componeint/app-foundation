@@ -39,6 +39,7 @@ class AppFoundationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(\Onderdelen\FlexiList\FlexiListServiceProvider::class);
+        $this->app->register(\Consigliere\AppFoundation\ResponseMacroServiceProvider::class);
     }
 
     /**
