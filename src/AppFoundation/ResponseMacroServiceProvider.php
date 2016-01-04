@@ -5,8 +5,8 @@
 
 namespace Consigliere\AppFoundation;
 
-use Response;
 use Illuminate\Support\ServiceProvider;
+use Response;
 
 class ResponseMacroServiceProvider extends ServiceProvider
 {
