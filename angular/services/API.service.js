@@ -39,8 +39,8 @@
                         }
                     })
                     .addFullRequestInterceptor(function(element, operation, what, url, headers) {
-                        if ($localStorage.jwt) {
-                            headers.Authorization = 'Bearer ' + $localStorage.jwt;
+                        if ($localStorage.app_token) {
+                            headers.Authorization = 'Bearer ' + $localStorage.app_token;
                         }
                     })
                     .addResponseInterceptor(function(data, operation, what, url, response, deferred) {
