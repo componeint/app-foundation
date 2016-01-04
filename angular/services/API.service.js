@@ -42,6 +42,18 @@
                         if ($localStorage.jwt) {
                             headers.Authorization = 'Bearer ' + $localStorage.jwt;
                         }
+                    })
+                    .addResponseInterceptor(function(data, operation, what, url, response, deferred) {
+                        var extractedData;
+                        // look for getList operations
+                        if (operation === 'getList') {
+                            // handle the data and meta data
+                            extractedData = data.data;
+                            // extractedData.meta = data.data.meta;
+                        } else {
+                            extractedData = data;
+                        }
+                        return extractedData;
                     });
             });
         }
