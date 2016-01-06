@@ -19,7 +19,7 @@
             'ngStorage',
             'angular-loading-bar',
             'ngMdIcons',
-            'fxList',
+            'md.data.table',
             'partialsModule',
 
             /* Intra-services */
