@@ -15,7 +15,7 @@
     /* @ngInject */
     function ToastService($mdToast) {
         var delay    = 6000,
-            position = 'bottom right',
+            position = 'top right',
             action   = 'OK';
 
         var service = {
