@@ -38,6 +38,8 @@ class AppFoundationServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->register(\Dingo\Api\Provider\LaravelServiceProvider::class);
+        $this->app->register(\Barryvdh\Cors\ServiceProvider::class);
         $this->app->register(\Consigliere\AppFoundation\ResponseMacroServiceProvider::class);
     }
 
