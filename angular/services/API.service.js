@@ -1,4 +1,5 @@
 /**
+ * API.service.js
  * Modified from https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/API.service.js
  * by anonymous on 04/01/16 1:19.
  */
@@ -54,7 +55,8 @@
                             extractedData = data;
                         }
                         return extractedData;
-                    });
+                    })
+                    .setMethodOverriders(['delete', 'post']);
             });
         }
     }
