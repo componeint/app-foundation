@@ -56,7 +56,7 @@
                         }
                         return extractedData;
                     })
-                    .setMethodOverriders(['delete', 'post']);
+                    .setMethodOverriders(['put', 'patch', 'delete']);
             });
         }
     }
