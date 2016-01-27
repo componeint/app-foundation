@@ -1,17 +1,17 @@
 {
-  "name"             : "consigliere/app-foundation",
+  "name"             : "onderdelen/app-foundation",
   "description"      : "app-foundation",
   "keywords"         : [
-    "consigliere",
+    "onderdelen",
     "app-foundation"
   ],
-  "homepage"         : "https://github.com/consigliere/app-foundation",
+  "homepage"         : "https://github.com/onderdelen/app-foundation",
   "license"          : "MIT",
   "authors"          : [
     {
       "name"    : "anonymoussc",
       "email"   : "50c5ac69@opayq.com",
-      "homepage": "https://github.com/consigliere",
+      "homepage": "https://github.com/onderdelen",
       "role"    : "Developer"
     }
   ],
@@ -35,12 +35,12 @@
       "tests"
     ],
     "psr-4"   : {
-      "Consigliere\\AppFoundation\\": "src"
+      "Onderdelen\\AppFoundation\\": "src"
     }
   },
   "autoload-dev"     : {
     "psr-4": {
-      "Consigliere\\AppFoundation\\Test\\": "tests"
+      "Onderdelen\\AppFoundation\\Test\\": "tests"
     }
   },
   "minimum-stability": "stable"

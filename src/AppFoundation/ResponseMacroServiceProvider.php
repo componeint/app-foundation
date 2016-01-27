@@ -3,7 +3,7 @@
  * Created by anonymous on 04/01/16 0:14.
  */
 
-namespace Consigliere\AppFoundation;
+namespace Onderdelen\AppFoundation;
 
 use Illuminate\Support\ServiceProvider;
 use Response;

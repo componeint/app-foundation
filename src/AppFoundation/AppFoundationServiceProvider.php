@@ -1,4 +1,4 @@
-<?php namespace Consigliere\AppFoundation;
+<?php namespace Onderdelen\AppFoundation;
 
 use ReflectionClass;
 use Illuminate\Foundation\AliasLoader;
@@ -22,7 +22,7 @@ class AppFoundationServiceProvider extends ServiceProvider
     public function boot()
     {
         // Find path to the package
-        $componenentsFileName = with(new ReflectionClass('\Consigliere\AppFoundation\AppFoundationServiceProvider'))->getFileName();
+        $componenentsFileName = with(new ReflectionClass('\Onderdelen\AppFoundation\AppFoundationServiceProvider'))->getFileName();
         $componenentsPath = dirname($componenentsFileName);
 
         $this->loadViewsFrom($componenentsPath . '/../views', 'appFoundation');
@@ -40,7 +40,7 @@ class AppFoundationServiceProvider extends ServiceProvider
     {
         $this->app->register(\Dingo\Api\Provider\LaravelServiceProvider::class);
         $this->app->register(\Barryvdh\Cors\ServiceProvider::class);
-        $this->app->register(\Consigliere\AppFoundation\ResponseMacroServiceProvider::class);
+        $this->app->register(\Onderdelen\AppFoundation\ResponseMacroServiceProvider::class);
     }
 
     /**
