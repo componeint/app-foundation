@@ -1,5 +1,5 @@
 /**
- * layout.provider
+ * layout.provider.js
  * Created by anonymous on 05/02/16 8:38.
  */
 
@@ -19,7 +19,7 @@
         this.view      = view;
         this.layout    = layout;
         this.$get      = function() {
-            return {}
+            return {};
         };
 
         ////////////////
