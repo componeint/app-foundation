@@ -1,5 +1,6 @@
 <?php
 /**
+ * ResponseMacroServiceProvider.php
  * Created by anonymous on 04/01/16 0:14.
  */
 
@@ -17,19 +18,28 @@ class ResponseMacroServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Response::macro('success', function ($data) {
+        Response::macro('success', function ($message, $data) {
             return Response::json([
-                'errors' => false,
-                'data'   => $data,
+                'error'   => false,
+                'message' => $message,
+                'data'    => $data,
             ]);
         });
 
         Response::macro('error', function ($message, $status = 400) {
-            return \Response::json([
-                'message'     => $status . ' error',
-                'errors'      => [
-                    'message' => [$message],
-                ],
+            return Response::json([
+                'success'     => false,
+                'message'     => $status . ' error' . ' : ' . $message,
+                'status_code' => $status,
+            ], $status);
+        });
+
+        Response::macro('exception', function ($message, $status = 400, $data = null) {
+            return Response::json([
+                'success'     => false,
+                'error'       => true,
+                'message'     => $status . ' exception' . ' : ' . $message,
+                'data'        => $data,
                 'status_code' => $status,
             ], $status);
         });
