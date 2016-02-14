@@ -18,31 +18,58 @@ class ResponseMacroServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Response::macro('success', function ($message, $data) {
+        Response::macro('success', function (array $data = [], $message = 'success') {
             return Response::json([
-                'error'   => false,
-                'message' => $message,
+                'status' => [
+                    'error'   => false,
+                    'message' => $message,
+                ],
+                'data'   => $data,
+            ]);
+        });
+
+        Response::macro('error', function ($message = 'error', $statusCode = 400) {
+            return Response::json([
+                'status'  => [
+                    'success'     => false,
+                    'message'     => $message,
+                    'status_code' => $statusCode,
+                ],
+                'message' => 'Error ' . $statusCode . ' : ' . $message,
+            ]);
+        });
+
+        Response::macro('exception', function ($message = 'fail', $statusCode = 400, array $data = null) {
+            return Response::json([
+                'status'  => [
+                    'success'     => false,
+                    'error'       => true,
+                    'message'     => $message,
+                    'status_code' => $statusCode,
+                ],
+                'message' => 'Error ' . $statusCode . ' : ' . $message,
                 'data'    => $data,
             ]);
         });
 
-        Response::macro('error', function ($message, $status = 400) {
+        /*
+        Response::macro('success', function ($data) {
             return Response::json([
-                'success'     => false,
-                'message'     => $status . ' error' . ' : ' . $message,
-                'status_code' => $status,
-            ], $status);
+                'errors' => false,
+                'data'   => $data,
+            ]);
         });
 
-        Response::macro('exception', function ($message, $status = 400, $data = null) {
-            return Response::json([
-                'success'     => false,
-                'error'       => true,
-                'message'     => $status . ' exception' . ' : ' . $message,
-                'data'        => $data,
+        Response::macro('error', function ($message, $status = 400) {
+            return \Response::json([
+                'message'     => $status . ' error',
+                'errors'      => [
+                    'message' => [$message],
+                ],
                 'status_code' => $status,
             ], $status);
         });
+        */
     }
 
     /**
