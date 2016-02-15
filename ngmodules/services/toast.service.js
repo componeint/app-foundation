@@ -34,7 +34,7 @@
 
             return $mdToast.show(
                 $mdToast.simple()
-                    .content(content)
+                    .textContent(content)
                     .position(position)
                     .action(action)
                     .hideDelay(delay)
@@ -48,7 +48,7 @@
 
             return $mdToast.show(
                 $mdToast.simple()
-                    .content(content)
+                    .textContent(content)
                     .position(position)
                     .theme('warn')
                     .action(action)
