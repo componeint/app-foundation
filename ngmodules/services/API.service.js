@@ -19,7 +19,7 @@
         var
             headers = {
                 'Content-Type': 'application/json',
-                'Accept'      : 'application/x.laravel.v1+json'
+                'Accept'      : 'application/x.onsigbaar.v1+json'
             },
             service = serviceFn();
 
@@ -40,8 +40,8 @@
                         }
                     })
                     .addFullRequestInterceptor(function(element, operation, what, url, headers) {
-                        if ($localStorage.app_token) {
-                            headers.Authorization = 'Bearer ' + $localStorage.app_token;
+                        if ($localStorage.onsigbaar_token) {
+                            headers.Authorization = 'Bearer ' + $localStorage.onsigbaar_token;
                         }
                     })
                     .addResponseInterceptor(function(data, operation, what, url, response, deferred) {
