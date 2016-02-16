@@ -7,17 +7,24 @@
     'use strict';
 
     angular
-        .module('appFoundation')
-        .config(theming);
+        .module('app')
+        .config(defaultTheme)
+        .config(warn);
 
-    theming.$inject = ['$mdThemingProvider'];
+    defaultTheme.$inject = ['$mdThemingProvider'];
+    warn.$inject     = ['$mdThemingProvider'];
 
     /* @ngInject */
-    function theming($mdThemingProvider) {
+    function defaultTheme($mdThemingProvider) {
         $mdThemingProvider.theme('default')
             .primaryPalette('grey')
             .accentPalette('pink')
             .warnPalette('red');
+    }
+
+    /* @ngInject */
+    function warn($mdThemingProvider) {
+        $mdThemingProvider.theme('warn');
     }
 
 })();
