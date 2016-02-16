@@ -1,4 +1,5 @@
 /**
+ * loading-bar.js
  * Created by anonymous on 03/01/16 2:42.
  */
 
