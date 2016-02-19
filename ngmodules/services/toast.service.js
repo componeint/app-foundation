@@ -1,4 +1,5 @@
 /**
+ * toast.service.js
  * Upgraded from https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/toast.service.js
  * by anonymous on 30/12/15 18:11.
  */
@@ -8,7 +9,8 @@
 
     angular
         .module('appFoundation')
-        .factory('ToastService', ToastService);
+        .factory('ToastService', ToastService)
+        .factory('Toast', ToastService);
 
     ToastService.$inject = ['$mdToast'];
 
