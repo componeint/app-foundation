@@ -22,6 +22,7 @@
             'ngMdIcons',
             'md.data.table',
             'partialsModule',
+            'pascalprecht.translate',
 
             /* Intra-services */
             'inServices.exception',
