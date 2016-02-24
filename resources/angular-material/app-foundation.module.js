@@ -23,6 +23,7 @@
             'md.data.table',
             'partialsModule',
             'pascalprecht.translate',
+            '720kb.fx',
 
             /* Intra-services */
             'inServices.exception',
