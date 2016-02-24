@@ -23,6 +23,7 @@
             'md.data.table',
             'partialsModule',
             'pascalprecht.translate',
+            'jsonFormatter',
 
             /* Intra-services */
             'inServices.exception',
