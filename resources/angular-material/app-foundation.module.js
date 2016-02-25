@@ -23,7 +23,7 @@
             'md.data.table',
             'partialsModule',
             'pascalprecht.translate',
-            '720kb.fx',
+            'btford.markdown',
 
             /* Intra-services */
             'inServices.exception',
