@@ -1,4 +1,10 @@
-<?php namespace Onderdelen\AppFoundation;
+<?php
+/**
+ * AppFoundationServiceProvider.php
+ * Created by anonymous on 13/12/15 11:09.
+ */
+
+namespace Onderdelen\AppFoundation;
 
 use ReflectionClass;
 use Illuminate\Foundation\AliasLoader;
@@ -23,7 +29,7 @@ class AppFoundationServiceProvider extends ServiceProvider
     {
         // Find path to the package
         $componenentsFileName = with(new ReflectionClass('\Onderdelen\AppFoundation\AppFoundationServiceProvider'))->getFileName();
-        $componenentsPath = dirname($componenentsFileName);
+        $componenentsPath     = dirname($componenentsFileName);
 
         $this->loadViewsFrom($componenentsPath . '/../views', 'appFoundation');
 
@@ -41,6 +47,7 @@ class AppFoundationServiceProvider extends ServiceProvider
         $this->app->register(\Dingo\Api\Provider\LaravelServiceProvider::class);
         $this->app->register(\Barryvdh\Cors\ServiceProvider::class);
         $this->app->register(\Onderdelen\AppFoundation\ResponseMacroServiceProvider::class);
+        $this->app->register(\Teemat\Quetzalcoatl\QuetzalcoatlServiceProvider::class);
     }
 
     /**
