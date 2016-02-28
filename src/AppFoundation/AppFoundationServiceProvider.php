@@ -47,6 +47,7 @@ class AppFoundationServiceProvider extends ServiceProvider
         $this->app->register(\Dingo\Api\Provider\LaravelServiceProvider::class);
         $this->app->register(\Barryvdh\Cors\ServiceProvider::class);
         $this->app->register(\Onderdelen\AppFoundation\ResponseMacroServiceProvider::class);
+        $this->app->register(\Onderdelen\Seneschal\SeneschalServiceProvider::class);
         $this->app->register(\Teemat\Quetzalcoatl\QuetzalcoatlServiceProvider::class);
     }
 
