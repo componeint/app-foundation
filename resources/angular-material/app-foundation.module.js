@@ -29,7 +29,6 @@
             'inServices.exception',
             'inServices.logger',
             'inServices.routes',
-            'seneschal',
             'quetzalcoatl'
         ]);
 
