@@ -28,7 +28,8 @@
             /* Intra-services */
             'inServices.exception',
             'inServices.logger',
-            'inServices.routes'
+            'inServices.routes',
+            'quetzalcoatl'
         ]);
 
     angular.module('widgets', []);
