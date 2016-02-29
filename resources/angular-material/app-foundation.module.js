@@ -24,6 +24,7 @@
             'partialsModule',
             'pascalprecht.translate',
             'btford.markdown',
+            'vAccordion',
 
             /* Intra-services */
             'inServices.exception',
