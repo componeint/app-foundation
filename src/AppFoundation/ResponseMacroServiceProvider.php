@@ -4,7 +4,7 @@
  * Created by anonymous on 04/01/16 0:14.
  */
 
-namespace Onderdelen\AppFoundation;
+namespace Componeint\AppFoundation;
 
 use Illuminate\Support\ServiceProvider;
 use Response;

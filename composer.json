@@ -1,17 +1,17 @@
 {
-  "name"             : "onderdelen/app-foundation",
+  "name"             : "componeint/app-foundation",
   "description"      : "app-foundation",
   "keywords"         : [
-    "onderdelen",
+    "componeint",
     "app-foundation"
   ],
-  "homepage"         : "https://github.com/onderdelen/app-foundation",
+  "homepage"         : "https://github.com/componeint/app-foundation",
   "license"          : "MIT",
   "authors"          : [
     {
       "name"    : "anonymoussc",
       "email"   : "50c5ac69@opayq.com",
-      "homepage": "https://github.com/onderdelen",
+      "homepage": "https://github.com/componeint",
       "role"    : "Developer"
     }
   ],
@@ -35,12 +35,12 @@
       "tests"
     ],
     "psr-4"   : {
-      "Onderdelen\\AppFoundation\\": "src"
+      "Componeint\\AppFoundation\\": "src"
     }
   },
   "autoload-dev"     : {
     "psr-4": {
-      "Onderdelen\\AppFoundation\\Test\\": "tests"
+      "Componeint\\AppFoundation\\Test\\": "tests"
     }
   },
   "minimum-stability": "stable"

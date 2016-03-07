@@ -4,7 +4,7 @@
  * Created by anonymous on 14/01/16 8:58.
  */
 
-namespace Onderdelen\AppFoundation\Controller;
+namespace Componeint\AppFoundation\Controller;
 
 use Dingo\Api\Http\Request;
 use Dingo\Api\Exception\ValidationHttpException;
@@ -15,7 +15,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 /**
  * Class Controller
- * @package Onderdelen\AppFoundation\Controller
+ * @package Componeint\AppFoundation\Controller
  */
 abstract class Controller extends BaseController
 {

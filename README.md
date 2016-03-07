@@ -15,14 +15,14 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require onderdelen/app-foundation
+$ composer require componeint/app-foundation
 ```
 
 ## Usage
 
 ``` php
-$app-foundation = new Onderdelen\AppFoundation();
-echo $app-foundation->echoPhrase('Hello, Onderdelen!');
+$app-foundation = new Componeint\AppFoundation();
+echo $app-foundation->echoPhrase('Hello, Componeint!');
 ```
 
 ## Change log
@@ -52,17 +52,17 @@ If you discover any security related issues, please email 50c5ac69@opayq.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/onderdelen/app-foundation.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/componeint/app-foundation.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/onderdelen/app-foundation/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/onderdelen/app-foundation.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/onderdelen/app-foundation.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/onderdelen/app-foundation.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/componeint/app-foundation/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/componeint/app-foundation.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/componeint/app-foundation.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/componeint/app-foundation.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/onderdelen/app-foundation
-[link-travis]: https://travis-ci.org/onderdelen/app-foundation
-[link-scrutinizer]: https://scrutinizer-ci.com/g/onderdelen/app-foundation/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/onderdelen/app-foundation
-[link-downloads]: https://packagist.org/packages/onderdelen/app-foundation
-[link-author]: https://github.com/onderdelen
+[link-packagist]: https://packagist.org/packages/componeint/app-foundation
+[link-travis]: https://travis-ci.org/componeint/app-foundation
+[link-scrutinizer]: https://scrutinizer-ci.com/g/componeint/app-foundation/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/componeint/app-foundation
+[link-downloads]: https://packagist.org/packages/componeint/app-foundation
+[link-author]: https://github.com/componeint
 [link-contributors]: ../../contributors
