@@ -30,6 +30,7 @@
             'inServices.exception',
             'inServices.logger',
             'inServices.routes',
+            'dashboard',
             'quetzalcoatl'
         ]);
 
