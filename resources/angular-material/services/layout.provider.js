@@ -24,7 +24,7 @@
 
         ////////////////
 
-        function dashboard(viewName) {
+        function dashboardView(viewName) {
             if (viewName !== '') {
                 return './views/dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
             } else {
