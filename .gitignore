@@ -3,3 +3,4 @@ composer.lock
 docs
 vendor
 /bower_components
+/vendor/
