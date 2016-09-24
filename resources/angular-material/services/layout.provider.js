@@ -26,7 +26,7 @@
 
         function dashboard(viewName) {
             if (viewName !== '') {
-                return './views/dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
+                return './views/dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';// jscs:ignore maximumLineLength
             } else {
                 return './views/app/app/home/home.html';
             }
@@ -34,7 +34,7 @@
 
         function view(viewName) {
             if (viewName !== '') {
-                return './views/app/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
+                return './views/app/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';// jscs:ignore maximumLineLength
             } else {
                 return './views/app/app/home/home.html';
             }
@@ -42,7 +42,7 @@
 
         function layout(viewName) {
             if (viewName !== '') {
-                return './views/layouts/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
+                return './views/layouts/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';// jscs:ignore maximumLineLength
             } else {
                 return './views/layouts/themes/default/minimalist.html';
             }
