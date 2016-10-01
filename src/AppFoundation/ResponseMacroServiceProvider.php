@@ -1,7 +1,7 @@
 <?php
 /**
  * ResponseMacroServiceProvider.php
- * Created by anonymous on 04/01/16 0:14.
+ * Created by @anonymoussc on 04/01/16 0:14.
  */
 
 namespace Componeint\AppFoundation;
