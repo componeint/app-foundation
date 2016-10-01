@@ -55,5 +55,4 @@ class AppFoundationServiceProvider extends ServiceProvider
     {
         return [];
     }
-
 }
