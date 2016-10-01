@@ -1,7 +1,7 @@
 <?php
 /**
  * AppFoundationServiceProvider.php
- * Created by anonymous on 13/12/15 11:09.
+ * Created by @anonymoussc on 13/12/15 11:09.
  */
 
 namespace Componeint\AppFoundation;
@@ -12,7 +12,6 @@ use Illuminate\Support\ServiceProvider;
 
 class AppFoundationServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -27,14 +26,12 @@ class AppFoundationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Find path to the package
         $componenentsFileName = with(new ReflectionClass('\Componeint\AppFoundation\AppFoundationServiceProvider'))->getFileName();
         $componenentsPath     = dirname($componenentsFileName);
 
-        $this->loadViewsFrom($componenentsPath . '/../views', 'appFoundation');
+        $this->loadViewsFrom($componenentsPath . '/../../resources/views', 'appFoundation');
 
-        //include $componenentsPath . '/../routes.php';
-
+        // include $componenentsPath . '/../routes.php';
     }
 
     /**
