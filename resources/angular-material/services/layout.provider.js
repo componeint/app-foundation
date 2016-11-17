@@ -26,7 +26,7 @@
 
         function dashboard(viewName) {
             if (viewName !== '') {
-                return './views/dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';// jscs:ignore maximumLineLength
+                return './views/app_dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';// jscs:ignore maximumLineLength
             } else {
                 return './views/app/app/home/home.html';
             }
