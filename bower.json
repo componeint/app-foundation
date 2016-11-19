@@ -1,0 +1,44 @@
+{
+  "name": "applications",
+  "description": "",
+  "main": "",
+  "authors": [
+    "anonymoussc <50c5ac69@opayq.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material-icons": "~0.6.0",
+    "angular-loading-bar": "~0.8.0",
+    "angular-ui-router": "~0.2.15",
+    "lodash": "~3.10.0",
+    "restangular": "~1.5.1",
+    "ngstorage": "~0.3.10",
+    "svg-morpheus": "~0.1.8",
+    "satellizer": "~0.13.4",
+    "angular-material": "~1.0.3",
+    "angular-material-data-table": "~0.9.9",
+    "animate.css": "~3.5.1",
+    "angular-markdown-directive": "~0.3.1",
+    "v-accordion": "~1.5.1",
+    "angular": "~1.5.0",
+    "angular-messages": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "angular-translate": "~2.10.0",
+    "prism": "~1.4.1"
+  },
+  "resolutions": {
+    "angular": "~1.5.0"
+  }
+}
