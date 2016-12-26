@@ -9,7 +9,7 @@ namespace Componeint\AppFoundation;
 use ReflectionClass;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Response;
+use Illuminate\Support\Facades\Response;
 
 class ResponseMacroServiceProvider extends ServiceProvider
 {
